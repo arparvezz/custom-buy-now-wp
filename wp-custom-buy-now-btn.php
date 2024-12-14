@@ -1,4 +1,4 @@
-
+<?php
 
 // custom buy now button 
 add_action('woocommerce_after_shop_loop_item', 'add_buy_now_button_after_cart', 15);
@@ -24,7 +24,7 @@ function add_buy_now_button_after_cart() {
     }
 }
 
-// custom buy now button css - for placement under "add to cart" button
+// custom buy now button css - for placement under the "add to cart" button
 add_action('wp_enqueue_scripts', 'enqueue_custom_css');
 
 function enqueue_custom_css() {
